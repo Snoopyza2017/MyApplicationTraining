@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <!--This is view-->
-    <View
-        android:layout_width="@dimen/icon"
-        android:layout_height="@dimen/icon"
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/h1"
+        android:text="PANU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#fd0000" />
 
     <View
@@ -13,5 +19,10 @@
         android:layout_height="@dimen/icon"
         android:background="#2003ff" />
 
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+</LinearLayout>
